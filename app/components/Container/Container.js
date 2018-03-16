@@ -1,4 +1,4 @@
-/* import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import React from 'react';
 import { View } from 'react-native';
 
@@ -10,4 +10,4 @@ Container.propTypes = {
   children: PropTypes.any,
 };
 
-export default Container; */
+export default Container;
