@@ -16,8 +16,6 @@ const styles = EStyleSheet.create({
     color: '$white',
     fontSize: 14,
     paddingVertical: 20,
-    letterSpacing: -0.5,
-    marginTop: 15,
     fontWeight: '300',
   },
 });
