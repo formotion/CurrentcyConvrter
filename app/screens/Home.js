@@ -12,9 +12,6 @@ import { Header } from '../components/Header';
 
 import { changeCurrencyAmount, swapCurrency } from '../actions/currencies';
 
-const TEMP_LAST_CONVERTED = new Date();
-const TEMP_CONVERSION_RATE = 0.79739;
-
 class Home extends Component {
   static propTypes = {
     navigation: PropTypes.object,
