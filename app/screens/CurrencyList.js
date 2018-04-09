@@ -7,8 +7,6 @@ import { changeBaseCurrency, changeQuoteCurrency } from '../actions/currencies';
 import { ListItem, Separator } from '../components/List';
 import currencies from '../data/currencies';
 
-const TEMP_CURRENT_CURRENCY = 'CAD';
-
 class CurrencyList extends Component {
   static propTypes = {
     navigation: PropTypes.object,
