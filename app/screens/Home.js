@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import { StatusBar, KeyboardAvoidingView } from 'react-native';
+import { StatusBar, KeyboardAvoidingView, Keyboard } from 'react-native';
 import { connect } from 'react-redux';
 
 import { Container } from '../components/Container';
@@ -42,10 +42,12 @@ class Home extends Component {
 
   handlePressBaseCurrency = () => {
     this.props.navigation.navigate('CurrencyList', { title: 'Base Currency', type: 'base' });
+    Keyboard.dismiss();
   };
 
   handlePressQuoteCurrency = () => {
     this.props.navigation.navigate('CurrencyList', { title: 'Quote Currency', type: 'quote' });
+    Keyboard.dismiss();
   };
 
   handleSwapCurrency = () => {
@@ -54,6 +56,7 @@ class Home extends Component {
 
   handleOptionsPress = () => {
     this.props.navigation.navigate('Options');
+    Keyboard.dismiss();
   };
 
   render() {
